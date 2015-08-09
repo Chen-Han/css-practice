@@ -1,0 +1,230 @@
+body {
+  background-color: #f7f7f7;
+}
+.clear-fix:before,
+.clear-fix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.pt-box {
+  background-color: #fefefe;
+  border: 1px solid #c8643c;
+  margin-bottom: 20px;
+}
+.pt-box .pt-header {
+  background-color: #c8643c;
+  width: 100%;
+}
+.pt-box .pt-header .title {
+  padding: 12px 0 10px 5px;
+  color: white;
+  display: inline-block;
+}
+.pt-box .pt-header .title h4 {
+  margin: 0;
+}
+.pt-box .pt-content {
+  height: 450px;
+}
+.pt-box ul.pt-label-list {
+  list-style: none;
+  padding: 5px 0.5em 5px 0;
+  float: right;
+  display: inline-block;
+  margin: 0;
+}
+.pt-box ul.pt-label-list > li.pt-label {
+  display: inline-block;
+}
+.pt-box.clear {
+  background-color: #fefefe;
+  border: 1px solid #c8643c;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  border: none;
+}
+.pt-box.clear .pt-header {
+  background-color: #c8643c;
+  width: 100%;
+}
+.pt-box.clear .pt-header .title {
+  padding: 12px 0 10px 5px;
+  color: white;
+  display: inline-block;
+}
+.pt-box.clear .pt-header .title h4 {
+  margin: 0;
+}
+.pt-box.clear .pt-content {
+  height: 450px;
+}
+.pt-box.clear ul.pt-label-list {
+  list-style: none;
+  padding: 5px 0.5em 5px 0;
+  float: right;
+  display: inline-block;
+  margin: 0;
+}
+.pt-box.clear ul.pt-label-list > li.pt-label {
+  display: inline-block;
+}
+.pt-box.clear .pt-header {
+  width: initial;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+.pt-box.clear .pt-header .title {
+  color: #232323;
+}
+.pt-label {
+  padding: 8px 10px;
+  transition: all linear 0.2s;
+}
+.pt-label a:hover {
+  text-decoration: none;
+}
+.pt-label.label-clear {
+  border: 1px solid #e3e3e3;
+  background-color: transparent;
+}
+.pt-label.label-clear:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.pt-label.label-clear.active {
+  background-color: rgba(26, 26, 26, 0);
+}
+.pt-label.label-clear.active a {
+  color: #cacaca;
+}
+.pt-label.label-clear a {
+  color: #e3e3e3;
+}
+.pt-label.label-clear.active {
+  background-color: #e3e3e3;
+}
+.pt-label.label-clear.active a {
+  color: black;
+}
+.pt-label.label-clear:hover {
+  border: 1px solid #cacaca;
+}
+.pt-label.label-clear:hover a {
+  color: #cacaca;
+}
+.pt-label.label-lined {
+  background-color: transparent;
+  transition: none;
+  margin-bottom: 3px;
+}
+.pt-label.label-lined:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.pt-label.label-lined.active {
+  background-color: rgba(26, 26, 26, 0);
+}
+.pt-label.label-lined.active a {
+  color: #0a0a0a;
+}
+.pt-label.label-lined a {
+  color: #232323;
+}
+.pt-label.label-lined:hover {
+  border-bottom: 3px solid rgba(255, 153, 0, 0.3);
+  margin-bottom: 0;
+}
+.pt-label.label-lined.active {
+  border-bottom: 3px solid #ff9900;
+  margin-bottom: 0;
+}
+.pt-label.label-default {
+  background-color: #e1e1e1;
+}
+.pt-label.label-default:hover {
+  background-color: #c8c8c8;
+}
+.pt-label.label-default.active {
+  background-color: #fbfbfb;
+}
+.pt-label.label-default.active a {
+  color: #1a1a1a;
+}
+.pt-label.label-default a {
+  color: #343434;
+}
+.pt-label.label-rounded {
+  border-radius: 10px;
+}
+.pt-label.label-primary {
+  background-color: #3399bb;
+}
+.pt-label.label-primary:hover {
+  background-color: #287893;
+}
+.pt-label.label-primary.active {
+  background-color: #51b0d0;
+}
+.pt-label.label-primary.active a {
+  color: #d5d5d5;
+}
+.pt-label.label-primary a {
+  color: #eeeeee;
+}
+.pt-label.label-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #eeeeee;
+  opacity: 0.8;
+}
+.pt-label.label-icon i {
+  margin-top: 6px;
+  margin-left: 7px;
+  color: #eeeeee;
+}
+.pt-label.label-icon:hover {
+  opacity: 1;
+}
+.item.item-sm {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 30px;
+}
+.item.item-sm:nth-child {
+  margin-right: 0;
+}
+.item.item-sm .detail {
+  transition: all linear 0.2s;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  background-color: black;
+  opacity: 0.6;
+}
+.item.item-sm .detail .price {
+  font-size: 26px;
+  color: white;
+}
+.item.item-sm .detail .actions i {
+  font-size: 26px;
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+}
+.item.item-sm .detail .actions i:hover {
+  color: #3399bb;
+}
+.item.item-sm:hover .detail {
+  top: 0;
+}
+.img.img-full {
+  width: 100%;
+  height: 100%;
+}
